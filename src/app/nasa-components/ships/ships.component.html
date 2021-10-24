@@ -1,0 +1,21 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Ship name</th>
+      <th scope="col">Model</th>
+      <th scope="col">Type</th>
+      <th scope="col">Active status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ship of ships">
+      <th scope="row">{{ ship.ship_name }}</th>
+      <th>{{ ship.ship_model }}</th>
+      <th>{{ ship.ship_type }}</th>
+      <th>{{ ship.active }}</th>
+    </tr>
+  </tbody>
+  <div *ngIf="isLoading">
+    <p>Loading...</p>
+  </div>
+</table>

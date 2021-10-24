@@ -1,0 +1,30 @@
+#link {
+  font-size: 1.2em;
+  transition: all 0.5s;
+
+  margin: 0 0 auto 0;
+}
+
+#link:hover {
+  color: rgb(248, 115, 115);
+}
+
+ul {
+  margin: 0 200px 0 auto;
+}
+
+#nasa {
+  margin-left: 150px;
+}
+
+@media (max-width: 720px) {
+  #nasa {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  #nasa img {
+    width: 80px;
+  }
+}

@@ -1,0 +1,21 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Serial</th>
+      <th scope="col">Core Block</th>
+      <th scope="col">Status</th>
+      <th scope="col">Original Launch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let core of cores">
+      <th scope="row">{{ core.core_serial }}</th>
+      <th>{{ core.block }}</th>
+      <th>{{ core.status }}</th>
+      <th>{{ core.original_launch }}</th>
+    </tr>
+  </tbody>
+  <div *ngIf="isLoading">
+    <p>Loading...</p>
+  </div>
+</table>

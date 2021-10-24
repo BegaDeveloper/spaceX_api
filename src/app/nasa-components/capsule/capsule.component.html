@@ -1,0 +1,21 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Serial</th>
+      <th scope="col">Capsule id</th>
+      <th scope="col">Stats</th>
+      <th scope="col">Original Launch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let planet of planets">
+      <th scope="row">{{ planet.capsule_serial }}</th>
+      <th>{{ planet.capsule_id }}</th>
+      <th>{{ planet.status }}</th>
+      <th>{{ planet.original_launch }}</th>
+    </tr>
+  </tbody>
+  <div *ngIf="isLoading">
+    <p>Loading...</p>
+  </div>
+</table>

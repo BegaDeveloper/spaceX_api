@@ -1,0 +1,11 @@
+.navigation a {
+  margin: 15px 25px 0 0;
+  color: #0d0d0d;
+}
+
+.navigation {
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  padding: 15px 30px 15px 0;
+}
